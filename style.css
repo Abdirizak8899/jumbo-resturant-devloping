@@ -1,0 +1,388 @@
+*{
+    padding: 0;margin: 0;
+    scroll-behavior: smooth;font-family: 'Poppins';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    /* position: fixed; */
+    /* z-index: 999; */
+    background: #fff;
+}
+header .brand{
+    color: #F50057;
+    padding-left: 5px;
+}
+.brand i{
+    margin-right: 3px;
+}
+nav{
+    padding-right: 60px;
+}
+nav a {
+    text-decoration: none;
+    color: #F50057;
+    text-transform: capitalize;
+    margin: 5px;
+    margin-left: 8px;  
+    border: #F50057 1px solid;
+    padding: 12px;border-radius: 7px;
+    padding-left: 33px;
+    padding-right: 33px;  
+    transition: 0.6s ease;
+}
+nav a i{
+    margin-right: 7px;
+}
+nav a:hover{
+    background: #F50057;
+    color: aliceblue;
+}
+header span{
+    display: flex;
+    align-items: center;justify-content: center;
+    color: #F50057;
+}
+header span input{
+    outline: none;
+    padding: 8px;
+    width: 23em;
+    border-radius: 5px;
+    padding-left:5px;
+    border: #f50058 solid 2px;
+    text-align: center;
+}
+header span input:focus{
+    border: #F50057 2px solid;
+}
+header span #magni{
+    color: #f50057;
+    transform: translateX(27px);
+}
+header span #fork{
+    transform: translateX(-43px);
+}
+#home{
+    display: flex;
+    justify-content: space-between;align-items: center;
+    padding-left:30px ;padding-right: 30px;
+    height: 100vh;
+}
+.hero-img img{
+    height: 500px;width: 580px;
+    transform: translateX(-70px);
+}
+.dilog{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+    ;
+    align-items: center;
+    border-top: #F50057 solid 1px;
+    border-bottom: navy 2px solid;
+    padding: 9px;
+    border-radius: 6px;
+    transform: translateY(-27px) translateX(50px);
+}
+.dilog .d1{
+    color: navy;
+}
+.dilog .d2{
+    color: #F50057;
+}
+.dilog a{
+    text-decoration: none;
+    background: #f50057;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    transition: 0.7s ease;
+}
+.dilog a i{
+    margin-left: 7px;
+}
+.dilog a:hover{
+    transform: scale(1.1);
+}
+
+.login,.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f50057;
+    height: 100vh;
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    width: 11em;
+    border-bottom: #f50057 2px solid;
+    padding: 30px;
+    margin-left: 9pc;
+    border-top: 3px solid navy;
+    border-top-left-radius: 3em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+.ads span{
+    display: flex;justify-content: center;align-items: center;flex-direction: column;
+}
+.ads span h2{
+    color: #F50057;
+    margin-right: 7px;
+    font-size: 2em;
+}
+.ads span h3{
+    color: navy;
+}
+.ads b{
+    color: orange;
+}
+.ads span h3{
+    font-size: 1.5em;
+}
+.login form,.register form{
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+
+    border-radius: 6px;
+}
+.login form p,.register form p{
+    color: #4e4d4985;
+    margin: 5px;
+}
+.login form span,.register form span{
+    margin: 7px;
+}
+.login form input,.register form input{
+    width: 18em;
+    padding: 9px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    transition: 0.7s ease;
+}
+.login form input:focus,.register form input:focus{
+    border: #f50057 2px solid;
+}
+.login form span i,.register form span i {
+    transform: translateX(-35px);
+    color: #F50057;
+}
+.login form button,.register form button{
+    color: #fff;
+    background: #f50058;
+    outline: none;
+    border: none;
+    padding: 7px;
+    width: 16em;
+    margin: 6px;
+    border-radius: 6px;
+    transition: 0.7s ease;
+}
+.login form button:hover,.register form button:hover{
+    background: #f50057;
+    cursor: pointer;
+}
+.login form a{
+    margin: 5px;
+}
+.gender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12em;
+}
+.gender input{
+    margin: 3px;
+    margin-left: 5px;
+}
+/* .burger {
+    display: flex;justify-content: center;align-items: center;
+    border-bottom: 2px solid #F50057;
+    background: #f50057;
+} */
+.p1,.p2,.p3{
+    width: 20px;
+    height: 20px;
+    background-color: #F50057;
+    display: block;
+}
+label.hamburger {
+    display: block;
+    background: #fff;
+    width: 40px; /* less width = square hamburger */
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+ }
+ 
+ input#hamburger {
+   display:none
+ }
+ 
+ .line {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #000;
+    transition: 0.5s;
+ }
+ .row{
+    display: none;
+ }
+ /* steps of 12 are optional, could also be 10, 13 etc */
+ .line:nth-child(1) { top: 12px; background: #f50057; }
+ .line:nth-child(2) { top: 24px;  background: #f50057; }
+ .line:nth-child(3) { top: 36px; background: #f50057; }
+ 
+ /* translateY must be same as */
+ #hamburger:checked + .hamburger .line:nth-child(1){
+    transform: translateY(12px) rotate(-45deg);
+ }
+ 
+ #hamburger:checked + .hamburger .line:nth-child(2){
+    opacity:0;
+ }
+ 
+ #hamburger:checked + .hamburger .line:nth-child(3){
+    transform: translateY(-12px) rotate(45deg);
+ }
+.gender label{
+    margin: 3px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f50057;
+    height: 25em;
+    padding: 40px;
+    border-top-left-radius: 7em;
+    color: aliceblue;
+}
+.c-info{
+    display: flex;
+    flex-direction: column;
+}
+.c-info h3{
+    letter-spacing: 0.9px;
+    margin-bottom: 6px;
+}
+.c-info span{
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+.c-info span i{
+    margin-right: 9px;
+}
+.get-in-touch{
+    background: navy;
+    height: 7em;
+    padding: 16px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.get-in-touch h3{
+    margin-bottom: 7px;
+}
+.get-in-touch input{
+    outline: none;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.get-in-touch button{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius: 3px;
+    margin-left: 4px;
+    background: #f50057;
+    color: aliceblue;
+    font-size: large;
+}
+.get-in-touch button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+/* responsive in in any device */
+@media only screen and (max-width: 812px){
+    nav{
+        display: none;
+    }
+    .row{
+        display: block;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+} 
+@media only screen and (max-width: 970px){
+    .home{
+        display: flex;flex-direction: column;justify-content: center;align-items: center;
+    }
+}
+@media only screen and (max-width: 741px){
+    .hero-img img{
+        width: 250px;height: 250px;
+    }
+    .home{
+        display: flex;flex-direction: column-reverse;
+        align-items: center;justify-content: center;
+        flex-wrap: wrap;
+    }
+    .dilog{
+        margin: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;justify-content: center;align-items: center;
+    }
+    .c-info{
+        margin: 10px;
+    }
+    .c-info h3{
+        margin-bottom: 7px;
+    }
+    footer div{
+        margin-bottom: 7px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .search{
+        width: 5em;
+        margin: 5px;transform: translateY(43px) translateX(-20px);
+    }
+    .row{
+        transform: translateX(50px);
+    }
+    .home{
+        display: flex;flex-direction: column-reverse;
+        flex-wrap: wrap;justify-content: center;align-items: center;
+    }
+    .hero-img img{
+        width: 150px;height: 150px;transform: translateY(70px);
+        display: none;
+    }
+    .dilog{
+        width: 13em;
+    }
+}

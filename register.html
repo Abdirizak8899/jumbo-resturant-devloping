@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>registeration-page</title>
+</head>
+<body>
+    <section class="register">
+        <form >
+            <h2>Register</h2>
+            <p>Create a new account</p>
+            <span>
+                <input type="name" name="name" id="name" placeholder="Full name"><i class="fa-solid fa-user"></i>
+            </span>
+            <span>
+                <input type="email" name="email" placeholder="Eg. example@gmail.com"><i class="fa-regular fa-envelope"></i>
+            </span>
+            <span>
+                <input type="tel" name="tel" id="phonenumber" placeholder="Phone number"><i class="fa-solid fa-phone"></i>
+            </span>
+            <span>
+                <input type="address" name="address" id="location" placeholder="Address"><i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span>
+                <input type="password" name="password" id="password" placeholder="Password"><i class="fa-solid fa-lock"></i>
+            </span>
+            <span>
+                <input type="confirm-password" name="password" id="password" placeholder="Confirm password"><i class="fa-solid fa-lock"></i>
+            </span>
+
+            <span class="gender">
+                <h3>Gender:</h3>
+                <input id="setB_male" type="radio" name="setB_gender">
+                    <label for="setB_male">Male</label>
+                <input id="setB_female" type="radio" name="setB_gender">
+                    <label for="setB_female">Female</label>
+                <input id="setB_both" type="radio" name="setB_gender" checked>
+                    <label for="setB_both">All</label>
+                </span>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+<script>
+    $('#setC input').click(function() {
+	$('#setC input').not(this).prop('checked', false);
+});
+
+
+$('#setD input').click(function() {
+	if (this.attr('checked', true)) {
+		this.removeAttr("checked");
+}
+});
+
+</script>
+</html>

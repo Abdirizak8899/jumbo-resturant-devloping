@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>test-page</title>
+</head>
+<body>
+    <header>
+        <h2 class="brand"><i class="fa-solid fa-burger"></i> JUMBO</h2>
+        <span class="search"><i class="fa-solid fa-magnifying-glass" id="magni"></i><input type="search" name="search" placeholder="Search food"><i class="fa-solid fa-utensils" id="fork"></i></span>        
+    </header>
+    <div class="suggest">
+        <h3>Suggestion foods</h3>
+        <p>popular food that people order always</p>
+    </div>
+    <section>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/pizzza.png" alt="pizza">       
+            </div><br>
+        <div class="i-name">
+            <h3>PIZZA FRED</h3>
+        </div>
+        <div class="or-plus">
+            <b>$4</b><i class="fa-solid fa-circle-plus"></i>
+        </div>            
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <img src="imgs/test.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>ICE CREAM</h3>
+        </div>
+        <div class="or-plus">
+            <b>$0.25</b><i class="fa-solid fa-circle-plus"></i>
+        </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/eggs.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>COOKED EGGS</h3>
+        </div>
+        <div class="or-plus">
+            <b>$0.75</b>
+            <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+        </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/biryani.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>BIRYANI RICE</h3>
+        </div>
+        <div class="or-plus">
+            <b>$5</b>  <span class="add">
+                <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+            </span>
+        </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/ice-cream.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>JELLY CREAM</h3>
+        </div>
+        <div class="or-plus">
+            <b>$0.8</b>  <span class="add">
+                <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+            </span>
+        </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/humberger.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>HUMBERGER</h3>
+        </div>
+        <div class="or-plus">
+            <b>$2.3</b>  <span class="add">
+                <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+            </span>
+        </div>            
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <img src="imgs/fish.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>FISH</h3>
+        </div>
+        <div class="or-plus">
+            <b>$1.5</b>  <span class="add">
+                <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+            </span>
+        </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="imgs/kabsa.jpg" alt="ice-cream">       
+            </div><br>
+        <div class="i-name">
+            <h3>KABSA</h3>
+        </div>
+        <div class="or-plus">
+            <b>$5</b>  <span class="add">
+                <i id="p-plus" class="fa-solid fa-circle-plus" onclick="myFunction()"></i><i id="tick" class="fa-solid fa-circle-check" onclick="myFunction()"></i>
+            </span>
+        </div>            
+        </div>
+
+    </section>
+</body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("tick");
+  var y = document.getElementById("p-plus")
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block"
+  }
+}
+
+</script>
+</html>
